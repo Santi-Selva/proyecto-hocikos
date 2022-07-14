@@ -27,9 +27,6 @@ header {
     padding: 80px;
 }
 
-.tranf2:hover {
-    transform: scale(1.50,1.50)
-}
 .header__item a {
     color: rgb(248, 246, 246);
     text-decoration: none;
