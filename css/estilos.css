@@ -34,6 +34,18 @@ header {
     font-size: 110%;
     padding: 0 16px;
 }
+.header-letras {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    padding: 20px;
+}
+.header-letras:hover {
+    transform: scale(1.35, 1.35);
+    transition: 1s;
+}
+
 /* Main */
 
 
@@ -350,16 +362,15 @@ row-gap: 10px;
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
 }
-
-.formulario {
-    padding: 0 16px;
+.letras-bsp {
     font-family: 'Roboto', sans-serif;
-    font-size: 130%;
-    display: flex;
-    align-items: flex-end;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    
+}
+.formulario {
+    border: solid;
+    color: rgba(8, 8, 8, 0.753);
+}
+.form-boostrap {
+    padding: 0 16px;
 }
 .formulario__mapa {
     margin-left: auto;
@@ -397,10 +408,12 @@ footer {
 
 }
 .footer__imagen {
+    padding: 0 16px;
     width: 650px;
     height: 400px;
 }
 .footer__mapa {
+    padding: 0 16px;
     width: 650px;
     height: 400px;
 }
@@ -561,15 +574,8 @@ footer {
 }
 /* Contactos */
 .formulario {
-    padding: 0 16px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    
+    border: solid;
+    color: rgba(8, 8, 8, 0.753);
 }
 .formulario__mapa {
     width: 180px;
@@ -721,14 +727,8 @@ footer {
 }
 /* Contacto */
 .formulario {
-    padding: 0 16px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    border: solid;
+    color: rgba(8, 8, 8, 0.753);
 }
 .redes__imagen {
     width: 70px;

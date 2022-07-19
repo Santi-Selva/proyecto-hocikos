@@ -9,20 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
 <body>
     <header> <!-- Menu de navegacion -->
-        <nav class="header__nav">
-            <img class="header__logo" src="../recursos/huella.jpg">
-            <ul class="Header__lista">
-                <li class="header__item tranf2"><a href="../index.html">Inicio</a></li>
-                <li class="header__item tranf2"><a href="../paginas/alimentos.html">Alimentos</a></li>
-                <li class="header__item tranf2"><a href="../paginas/articulos-varios.html">Articulos Varios</a></li>
-                <li class="header__item tranf2"><a href="../paginas/peluqueria.html">Peluqueria</a></li>
-            </ul>
-        </nav>
+        <section class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg header ">
+                <div class="container-fluid">
+                    <a class="header-letras" href="../index.html">
+                    <img src="../recursos/favicon.ico" alt="">
+                    Hocikos
+                    </a>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-dark"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item header-letras">
+                        <a class="header-letras" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item header-letras">
+                        <a class="header-letras" href="alimentos.html">Alimentos</a>
+                        </li>
+                        <li class="nav-item header-letras">
+                        <a class="header-letras" href="articulos-varios.html">Articulos Varios</a>
+                        </li>
+                        <li class="nav-item header-letras">
+                        <a class="header-letras" href="peluqueria.html">Peluqueria</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </section>
     </header>
     <main class="main__contactos"> <!-- Contenido -->
         <H1 class="titulo__principal animate__animated animate__bounce">CONTACTO</H1>
@@ -41,14 +63,22 @@
             <a href="https://www.facebook.com/AAAJOficial/"><img class="redes__imagen" src="../recursos/facebook.jpg" alt=""></a>
             <a href="https://www.instagram.com/aaajoficial/"><img class="redes__imagen" src="../recursos/instagram.jpg" alt=""></a>
         </section>
-        <section class="formulario">
+        <section class="form-boostrap">
             <p class="redes__info">Dejanos tus datos y te enviamos la lista de precios semanalmente :</p>
-            <label class="formulario__item" for="">Email</label>
-            <input class="formulario__item" type="text">
-            <label class="formulario__item" for="">Telefono</label>
-            <input class="formulario__item" type="tel">
-            <input class="formulario__item" type="submit">
-            <input class="formulario__item" type="reset">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control formulario" id="floatingInput" placeholder="nombre">
+                <label class="letras-bsp" for="floatingInput">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control formulario" id="floatingInput" placeholder="name@example.com">
+                <label class="letras-bsp" for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+                <input type="tel" class="form-control formulario" id="floatingPassword" placeholder="numero">
+                <label class="letras-bsp" for="floatingPassword">Numero de Telefono</label>
+            </div>
+            <button type="submit" class="btn btn-dark letras-bsp">Enviar</button>
+            <button type="reset" class="btn btn-dark letras-bsp">Borrar</button>
         </section>
         </form>
     </main>
@@ -58,8 +88,12 @@
                 <li class="footer__item"><a href="../paginas/contacto.html">Click aqui para mas info del local</a></li>
             </ul>
         </nav>
-        <img class="footer__imagen" src="../recursos/alimentos.jpg" alt="publicidad alimento perro">
-        <img class="footer__imagen" src="../recursos/publidadd.jpg" alt="">
+        <section class="papa-footer">
+            <img class="footer__imagen" src="../recursos/alimentos.jpg" alt="publicidad alimento perro">
+            <img class="footer__imagen" src="../recursos/publidadd.jpg" alt="">
+        </section>
     </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
