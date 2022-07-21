@@ -1,754 +1,668 @@
-*   {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
 
 /* HEADER */
-
-
 header {
-    background-color: rgb(0, 0, 0);
-}
+  background-color: black; }
+  
 .header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
 .header__logo {
-    display: inline;
-    width: 100px;
-    
-}
+  display: inline;
+  width: 100px; }
+
 .header__item {
-    display: inline;
-    padding: 80px;
-}
+  display: inline;
+  padding: 80px; }
 
 .header__item a {
-    color: rgb(248, 246, 246);
+  color: #f8f6f6;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+  padding: 0 16px; }
+
+.header-letras {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 120%;
+  padding: 20px; }
+
+.header-letras:hover {
+  transform: scale(1.35, 1.35);
+  transition: 1s; }
+
+/* Main */
+main {
+  margin-bottom: 1px; }
+
+.titulo__principal {
+  text-align: center;
+  font-family: 'Titan One', cursive;
+  color: white;
+  background-color: black;
+  font-size: 80px;
+  padding: 0 16px;
+  margin: 1px; }
+
+.subtitulo__texto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 140%;
+  padding: 15px 16px;
+  background-color: black;
+  color: white; }
+
+.grid__inicio {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "grid-dos grid-dos grid-dos"
+ "grid-cuatro grid-tres grid-cinco"
+ "grid-uno grid-uno grid-uno";
+  background-image: url("../recursos/huellasperro.jpg");
+  column-gap: 10px;
+  row-gap: 10px; }
+
+.grid-uno {
+  grid-area: grid-uno;
+  background-image: url(../recursos/bannerinicio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.grid-dos {
+  grid-area: grid-dos;
+  background-image: url(../recursos/peluoferta.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.grid-tres {
+  grid-area: grid-tres;
+  background-image: url(../recursos/mediopelu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.grid-cuatro {
+  grid-area: grid-cuatro;
+  background-image: url(../recursos/accesorios.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.grid-cinco {
+  grid-area: grid-cinco;
+  background-image: url(../recursos/maspublicidad.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Main Alimentos */
+.tarjeta {
+  display: flex;
+  align-content: stretch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 8px black;
+  background-color: white; }
+
+.productos__lista {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "pedrigee dog-selection dog-chow"
+ "cat-chow eukanuba whiskas";
+  column-gap: 30px;
+  row-gap: 30px;
+  background-image: url("../recursos/huellasperro.jpg"); }
+
+.pedrigee {
+  grid-area: pedrigee; }
+
+.dog-chow {
+  grid-area: dog-chow; }
+
+.cat-chow {
+  grid-area: cat-chow; }
+
+.dog-selection {
+  grid-area: dog-selection; }
+
+.eukanuba {
+  grid-area: eukanuba; }
+
+.whiskas {
+  grid-area: whiskas; }
+
+.productos__imagen {
+  width: 70%;
+  height: 170px; }
+
+.productos__info {
+  color: white;
+  padding: 0 16px;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
+.productos__precio {
+  background-color: black;
+  width: 100%; }
+
+.precio {
+  color: white;
+  text-align: center; }
+
+/* Main Articulos varios */
+.articulos__imagen {
+  width: 200px;
+  height: 200px; }
+
+.articulos__lista {
+  display: grid;
+  width: 100vw;
+  height: auto;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "publicidad producto-dos producto-cinco"
+ "publicidad producto-ocho producto-cuatro"
+ "maspubli producto-uno producto-siete"
+ "maspubli producto-tres producto-seis";
+  column-gap: 30px;
+  row-gap: 15px;
+  background-image: url("../recursos/huellasperro.jpg"); }
+
+.publicidad {
+  grid-area: publicidad;
+  background-image: url("../recursos/juguetesyac.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 2px black; }
+
+.maspubli {
+  grid-area: maspubli;
+  background-image: url(../recursos/maspubli.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 2px black;
+  background-color: white; }
+
+.producto-uno {
+  grid-area: producto-uno; }
+
+.producto-dos {
+  grid-area: producto-dos; }
+
+.producto-tres {
+  grid-area: producto-tres; }
+
+.producto-cuatro {
+  grid-area: producto-cuatro; }
+
+.producto-cinco {
+  grid-area: producto-cinco; }
+
+.producto-seis {
+  grid-area: producto-seis; }
+
+.producto-siete {
+  grid-area: producto-siete; }
+
+.producto-ocho {
+  grid-area: producto-ocho; }
+
+.articulos__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px black;
+  background-color: white; }
+
+.productos__precio {
+  color: white;
+  padding: 0 16px;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
+.tarjetita {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 30px; }
+
+/* Main Peluqueria */
+.peluqueria {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "uno1 uno1 uno1"
+ "dos2 tres3 cuatro4"
+ "cinco5 seis6 siete7";
+  column-gap: 5px;
+  row-gap: 5px;
+  background-image: url("../recursos/huellasperro.jpg"); }
+
+.uno1 {
+  grid-area: uno1;
+  background-image: url("../recursos/duchaperro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.dos2 {
+  grid-area: dos2;
+  background-image: url("../recursos/perritopelo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.tres3 {
+  grid-area: tres3;
+  background-image: url("../recursos/perritopeine.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.cuatro4 {
+  grid-area: cuatro4;
+  background-image: url("../recursos/otroperro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.cinco5 {
+  grid-area: cinco5;
+  background-image: url("../recursos/golden.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.seis6 {
+  grid-area: seis6;
+  background-image: url("../recursos/perropelo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.siete7 {
+  grid-area: siete7;
+  background-image: url("../recursos/perroducha.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.tranf1:hover {
+  transform: scale(1.25, 1.25);
+  transition: all 1s; }
+
+.peluqueria__texto {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 16px;
+  background-color: black;
+  color: white; }
+
+/* Main Contacto */
+.main__contactos {
+  background-color: darkseagreen; }
+
+.contactos__sub {
+  font-size: xx-large;
+  padding: 5px 30px;
+  font-family: 'Roboto', sans-serif; }
+
+.datos {
+  display: flex;
+  flex-direction: row; }
+
+.datos__local {
+  padding: 40px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline; }
+
+.letras-bsp {
+  font-family: 'Roboto', sans-serif; }
+
+.formulario {
+  border: solid;
+  color: rgba(8, 8, 8, 0.753); }
+
+.form-boostrap {
+  padding: 0 16px; }
+
+.formulario__mapa {
+  margin-left: auto;
+  padding-right: 10px; }
+
+.redes__info {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 16px; }
+
+.redes__imagen {
+  width: 100px;
+  padding: 5px 16px; }
+
+/* Footer */
+footer {
+  background-image: url("../recursos/huellasperro.jpg"); }
+
+.footer__item a {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  font-size: 170%;
+  padding: 0 16px; }
+
+.papa-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.footer__imagen {
+  padding: 0 16px;
+  width: 650px;
+  height: 400px; }
+
+.footer__mapa {
+  padding: 0 16px;
+  width: 650px;
+  height: 400px; }
+
+/* Media Celulares */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* Header */
+  .header__nav {
+    display: flex;
+    flex-direction: column; }
+  .header__logo {
+    display: inline;
+    width: 100px; }
+  .header__item {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    align-items: center; }
+  .header__item a {
+    color: #f8f6f6;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 110%;
-    padding: 0 16px;
-}
-.header-letras {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 120%;
-    padding: 20px;
-}
-.header-letras:hover {
-    transform: scale(1.35, 1.35);
-    transition: 1s;
-}
-
-/* Main */
-
-
-main {
-    margin-bottom: 1px;
-}
-.titulo__principal {
-    text-align: center;
-    font-family: 'Titan One', cursive;
-    color: rgb(255, 255, 255);
-    background-color: black;
-    font-size: 80px;
-    padding: 0 16px;
-    margin: 1px;
-}
-.subtitulo__texto {
-    font-family: 'Roboto', sans-serif;
-    font-size: 140%;
-    padding: 15px 16px;
-    background-color: black;
-    color: white;
-}
-.grid__inicio {
+    padding: 0 16px; }
+  /* Inicio */
+  .grid__inicio {
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"grid-dos grid-dos grid-dos"
-                        "grid-cuatro grid-tres grid-cinco"
-                        "grid-uno grid-uno grid-uno";
-background-image: url("../recursos/huellasperro.jpg");
-column-gap: 10px;
-row-gap: 10px;
-}
-.grid-uno {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "grid-dos"
+ "grid-uno"
+ "grid-tres"
+ "grid-cuatro"
+ "grid-cinco"; }
+  .grid-uno {
     grid-area: grid-uno;
     background-image: url(../recursos/bannerinicio.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-}
-.grid-dos {
+    background-size: cover; }
+  .grid-dos {
     grid-area: grid-dos;
     background-image: url(../recursos/peluoferta.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-.grid-tres {
+    background-size: cover; }
+  .grid-tres {
     grid-area: grid-tres;
     background-image: url(../recursos/mediopelu.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-}
-.grid-cuatro {
+    background-size: contain; }
+  .grid-cuatro {
     grid-area: grid-cuatro;
     background-image: url(../recursos/accesorios.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-.grid-cinco {
+    background-size: contain; }
+  .grid-cinco {
     grid-area: grid-cinco;
     background-image: url(../recursos/maspublicidad.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Main Alimentos */
-
-.tarjeta {
-    display: flex;
-    align-content: stretch;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: solid 8px rgb(0, 0, 0);
-    background-color: white;
-}
-.productos__lista {
+    background-size: contain; }
+  /* Alimentos */
+  .productos__lista {
     display: grid;
     width: auto;
     height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-areas:"pedrigee dog-selection dog-chow"
-                        "cat-chow eukanuba whiskas";
-    column-gap: 30px;
-    row-gap: 30px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-.pedrigee {
-    grid-area: pedrigee;
-}
-.dog-chow {
-    grid-area: dog-chow;
-}
-.cat-chow {
-    grid-area: cat-chow;
-}
-.dog-selection {
-    grid-area: dog-selection;
-}
-.eukanuba {
-    grid-area: eukanuba;
-}
-.whiskas {
-    grid-area: whiskas;
-}
-
-.productos__imagen {
-    width: 70%;
-    height: 170px;
-}
-.productos__info {
-    color: rgb(255, 255, 255);
-    padding: 0 16px;
-    background-color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-.productos__precio {
-    background-color: black;
-    width: 100%;
-}
-.precio {
-    color: white;
-    text-align: center;
-}
-
-/* Main Articulos varios */
-
-.articulos__imagen {
-    width: 200px;
-    height: 200px;
-}
-.articulos__lista {
-    display: grid;
-    width: 100vw;
-    height: auto;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:"publicidad producto-dos producto-cinco"
-                        "publicidad producto-ocho producto-cuatro"
-                        "maspubli producto-uno producto-siete"
-                        "maspubli producto-tres producto-seis";
-    column-gap: 30px;
-    row-gap: 15px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-.publicidad {
-    grid-area: publicidad;
-    background-image: url("../recursos/juguetesyac.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 2px rgb(0, 0, 0);
-    
-}
-.maspubli {
-    grid-area: maspubli;
-    background-image: url(../recursos/maspubli.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 2px rgb(0, 0, 0);
-    background-color: white;
-}
-.producto-uno {
-    grid-area: producto-uno;
-}
-.producto-dos {
-    grid-area: producto-dos;
-}
-.producto-tres {
-    grid-area: producto-tres;
-}
-.producto-cuatro {
-    grid-area: producto-cuatro;
-}
-.producto-cinco {
-    grid-area: producto-cinco;
-}
-.producto-seis {
-    grid-area: producto-seis;
-}
-.producto-siete {
-    grid-area: producto-siete;
-}
-.producto-ocho {
-    grid-area: producto-ocho;
-}
-.articulos__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 2px rgb(0, 0, 0);
-    background-color: white;
-}
-.productos__precio {
-    color: rgb(255, 255, 255);
-    padding: 0 16px;
-    background-color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-.tarjetita {
-    background-color: black;
-    width: 100%;
-    height: 100px;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-}
-
-/* Main Peluqueria */
-
-
-.peluqueria {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"uno1 uno1 uno1"
-                        "dos2 tres3 cuatro4"
-                        "cinco5 seis6 siete7";
-    column-gap: 5px;
-    row-gap: 5px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-.uno1 {
-    grid-area: uno1;
-    background-image: url("../recursos/duchaperro.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.dos2 {
-    grid-area: dos2;
-    background-image: url("../recursos/perritopelo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.tres3 {
-    grid-area: tres3;
-    background-image: url("../recursos/perritopeine.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.cuatro4 {
-    grid-area: cuatro4;
-    background-image: url("../recursos/otroperro.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.cinco5 {
-    grid-area: cinco5;
-    background-image: url("../recursos/golden.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.seis6 {
-    grid-area: seis6;
-    background-image: url("../recursos/perropelo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.siete7 {
-    grid-area: siete7;
-    background-image: url("../recursos/perroducha.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover
-}
-.tranf1:hover {
-    transform: scale(1.25, 1.25);
-    transition: all 1s;
-}
-
-
-.peluqueria__texto {
-    font-family: 'Roboto', sans-serif;
-    padding: 0 16px;
-    background-color: black;
-    color: white;
-}
-/* Main Contacto */
-
-.main__contactos {
-    background-color: darkseagreen;
-}
-.contactos__sub {
-    font-size: xx-large;
-    padding: 5px 30px;
-    font-family: 'Roboto', sans-serif;
-}
-.datos {
-        display: flex;
-        flex-direction: row;
-}
-
-.datos__local {
-    padding: 40px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-}
-.letras-bsp {
-    font-family: 'Roboto', sans-serif;
-}
-.formulario {
-    border: solid;
-    color: rgba(8, 8, 8, 0.753);
-}
-.form-boostrap {
-    padding: 0 16px;
-}
-.formulario__mapa {
-    margin-left: auto;
-    padding-right: 10px;
-}
-.redes__info {
-    font-family: 'Roboto', sans-serif;
-    padding: 5px 16px;
-}
-.redes__imagen {
-    width: 100px;
-    padding: 5px 16px;
-}
-
-/* Footer */
-
-
-footer {
-    background-image: url("../recursos/huellasperro.jpg");
-}
-
-
-.footer__item a {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    text-decoration: none;
-    background-color: white;
-    font-size: 170%; 
-    padding: 0 16px;
-}
-.papa-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-
-}
-.footer__imagen {
-    padding: 0 16px;
-    width: 650px;
-    height: 400px;
-}
-.footer__mapa {
-    padding: 0 16px;
-    width: 650px;
-    height: 400px;
-}
-
-/* Media Celulares */
-@media (min-width: 320px) and (max-width: 575px) {
-    /* Header */
-    .header__nav {
-        display: flex;
-        flex-direction: column
-        
-    }
-
-    .header__logo {
-        display: inline;
-        width: 100px;
-        
-    }
-
-    .header__item {
-        display: flex;
-        flex-direction: column;
-        padding: 6px;
-        align-items: center;
-    }
-    
-    .header__item a {
-        color: rgb(248, 246, 246);
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-size: 110%;
-        padding: 0 16px;
-    }
-    /* Inicio */
-    .grid__inicio {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:"grid-dos"
-                            "grid-uno"
-                            "grid-tres"
-                            "grid-cuatro"
-                            "grid-cinco";
-    }
-    .grid-uno {
-        grid-area: grid-uno;
-        background-image: url(../recursos/bannerinicio.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .grid-dos {
-        grid-area: grid-dos;
-        background-image: url(../recursos/peluoferta.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .grid-tres {
-        grid-area: grid-tres;
-        background-image: url(../recursos/mediopelu.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .grid-cuatro {
-        grid-area: grid-cuatro;
-        background-image: url(../recursos/accesorios.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .grid-cinco {
-        grid-area: grid-cinco;
-        background-image: url(../recursos/maspublicidad.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    /* Alimentos */
-    .productos__lista {
-        display: grid;
-        width: auto;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:"pedrigee"
-                            "dog-selection"
-                            "cat-chow"
-                            "eukanuba"
-                            "dog-chow"
-                            "whiskas";
-        column-gap: 10px;
-        row-gap: 10px;
-        background-image: url("../recursos/huellasperro.jpg");
-    }
-    .titulo__principal {
-        font-size: 40px;
-    }
-
-/* Articulos varios */
-.articulos__lista {
-    display: grid;
-    width: 100vw;
-    height: auto;
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(1fr, 10);
-    grid-template-areas:"publicidad"
-                        "maspubli"
-                        "producto-dos"
-                        "producto-cinco"
-                        "producto-ocho"
-                        "producto-cuatro"
-                        "producto-uno"
-                        "producto-siete"
-                        "producto-tres"
-                        "producto-seis";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "pedrigee"
+ "dog-selection"
+ "cat-chow"
+ "eukanuba"
+ "dog-chow"
+ "whiskas";
+    column-gap: 10px;
     row-gap: 10px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-.publicidad {
+    background-image: url("../recursos/huellasperro.jpg"); }
+  .titulo__principal {
+    font-size: 40px; }
+  /* Articulos varios */
+  .articulos__lista {
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 10);
+    grid-template-areas: "publicidad"
+ "maspubli"
+ "producto-dos"
+ "producto-cinco"
+ "producto-ocho"
+ "producto-cuatro"
+ "producto-uno"
+ "producto-siete"
+ "producto-tres"
+ "producto-seis";
+    row-gap: 10px;
+    background-image: url("../recursos/huellasperro.jpg"); }
+  .publicidad {
     grid-area: publicidad;
     background-image: url("../recursos/juguetesyac.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border: solid 2px rgb(0, 0, 0);
-    
-}
-.maspubli {
+    border: solid 2px black; }
+  .maspubli {
     grid-area: maspubli;
     background-image: url(../recursos/maspubli.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border: solid 2px rgb(0, 0, 0);
-    background-color: white;
-}
-/* Peluqueria */
-.peluqueria {
+    border: solid 2px black;
+    background-color: white; }
+  /* Peluqueria */
+  .peluqueria {
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:"uno1"
-                        "dos2"
-                        "tres3"
-                        "cuatro4" 
-                        "cinco5" 
-                        "seis6" 
-                        "siete7";
+    grid-template-areas: "uno1"
+ "dos2"
+ "tres3"
+ "cuatro4" 
+ "cinco5" 
+ "seis6" 
+ "siete7";
     column-gap: 5px;
     row-gap: 5px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-/* Contactos */
-.formulario {
+    background-image: url("../recursos/huellasperro.jpg"); }
+  /* Contactos */
+  .formulario {
     border: solid;
-    color: rgba(8, 8, 8, 0.753);
-}
-.formulario__mapa {
+    color: rgba(8, 8, 8, 0.753); }
+  .formulario__mapa {
     width: 180px;
     margin-left: auto;
-    padding-right: 10px;
-}
-.redes__imagen {
+    padding-right: 10px; }
+  .redes__imagen {
     width: 60px;
-    padding: 5px 16px;
-}
-
-    /* Footer */
-    .footer__imagen {
-        width: 100%;
-        height: 150px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .footer__mapa {
-        width: 100%;
-        height: 150px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .papa-footer {
-        display: block;
-    }
-}
+    padding: 5px 16px; }
+  /* Footer */
+  .footer__imagen {
+    width: 100%;
+    height: 150px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  .footer__mapa {
+    width: 100%;
+    height: 150px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  .papa-footer {
+    display: block; } }
 
 /* Media Tablets */
 @media (min-width: 576px) and (max-width: 992px) {
-    
-    /* Header */
-    .header__nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        
-    }
-
-    .header__logo {
-        display: inline;
-        width: 100px;
-        
-    }
-
-    .header__item {
-        display: inline;
-        padding: 0px;
-        align-items: center;
-    }
-    /* Inicio */
-    
-    .grid__inicio {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
-        grid-template-areas:"grid-dos grid-dos"
-                            "grid-uno grid-uno"
-                            "grid-tres grid-cinco"
-                            "grid-tres grid-cuatro";
-    }
-    .grid-uno {
-        grid-area: grid-uno;
-        background-image: url(../recursos/bannerinicio.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .grid-dos {
-        grid-area: grid-dos;
-        background-image: url(../recursos/peluoferta.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .grid-tres {
-        grid-area: grid-tres;
-        background-image: url(../recursos/mediopelu.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .grid-cuatro {
-        grid-area: grid-cuatro;
-        background-image: url(../recursos/accesorios.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .grid-cinco {
-        grid-area: grid-cinco;
-        background-image: url(../recursos/maspublicidad.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-/* Alimentos */
-.productos__lista {
+  /* Header */
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+  .header__logo {
+    display: inline;
+    width: 100px; }
+  .header__item {
+    display: inline;
+    padding: 0px;
+    align-items: center; }
+  /* Inicio */
+  .grid__inicio {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
+    grid-template-areas: "grid-dos grid-dos"
+ "grid-uno grid-uno"
+ "grid-tres grid-cinco"
+ "grid-tres grid-cuatro"; }
+  .grid-uno {
+    grid-area: grid-uno;
+    background-image: url(../recursos/bannerinicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .grid-dos {
+    grid-area: grid-dos;
+    background-image: url(../recursos/peluoferta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .grid-tres {
+    grid-area: grid-tres;
+    background-image: url(../recursos/mediopelu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .grid-cuatro {
+    grid-area: grid-cuatro;
+    background-image: url(../recursos/accesorios.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .grid-cinco {
+    grid-area: grid-cinco;
+    background-image: url(../recursos/maspublicidad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  /* Alimentos */
+  .productos__lista {
     display: grid;
     width: auto;
     height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"pedrigee dog-selection"
-                        "cat-chow eukanuba"
-                        "dog-chow whiskas";
+    grid-template-areas: "pedrigee dog-selection"
+ "cat-chow eukanuba"
+ "dog-chow whiskas";
     column-gap: 10px;
     row-gap: 10px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-/* Articulos varios */
-.articulos__imagen {
+    background-image: url("../recursos/huellasperro.jpg"); }
+  /* Articulos varios */
+  .articulos__imagen {
     width: 200px;
-    height: 200px;
-}
-.articulos__lista {
+    height: 200px; }
+  .articulos__lista {
     display: grid;
     width: 100vw;
     height: auto;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:"publicidad maspubli"
-                        "producto-dos producto-cinco"
-                        "producto-ocho producto-cuatro"
-                        "producto-uno producto-siete"
-                        "producto-tres producto-seis";
+    grid-template-areas: "publicidad maspubli"
+ "producto-dos producto-cinco"
+ "producto-ocho producto-cuatro"
+ "producto-uno producto-siete"
+ "producto-tres producto-seis";
     column-gap: 20px;
     row-gap: 10px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-/* Peluqueria */
-.peluqueria {
+    background-image: url("../recursos/huellasperro.jpg"); }
+  /* Peluqueria */
+  .peluqueria {
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:"uno1 uno1"
-                        "dos2 tres3"
-                        "cuatro4 cinco5" 
-                        "seis6 siete7";
+    grid-template-areas: "uno1 uno1"
+ "dos2 tres3"
+ "cuatro4 cinco5" 
+ "seis6 siete7";
     column-gap: 5px;
     row-gap: 5px;
-    background-image: url("../recursos/huellasperro.jpg");
-}
-/* Contacto */
-.formulario {
+    background-image: url("../recursos/huellasperro.jpg"); }
+  /* Contacto */
+  .formulario {
     border: solid;
-    color: rgba(8, 8, 8, 0.753);
-}
-.redes__imagen {
+    color: rgba(8, 8, 8, 0.753); }
+  .redes__imagen {
     width: 70px;
-    padding: 5px 16px;
-}
-
-/* Footer */
-    .footer__imagen {
-        width: 100%;
-        height: 400px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .footer__mapa {
-        width: 100%;
-        height: 400px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .papa-footer {
-        display: block;
-    }
-}
+    padding: 5px 16px; }
+  /* Footer */
+  .footer__imagen {
+    width: 100%;
+    height: 400px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  .footer__mapa {
+    width: 100%;
+    height: 400px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  .papa-footer {
+    display: block; } }
