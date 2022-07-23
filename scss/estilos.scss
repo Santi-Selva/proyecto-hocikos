@@ -7,7 +7,6 @@
 
 /* HEADER */
 
-
 header {
     background-color: rgb(0, 0, 0);
 }
@@ -41,6 +40,16 @@ header {
     font-size: 120%;
     padding: 20px;
 }
+.header-letras-1 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 170%;
+}
+.header-letras-1:hover {
+    transform: scale(1.35, 1.35);
+    transition: 1s;
+}
 .header-letras:hover {
     transform: scale(1.35, 1.35);
     transition: 1s;
@@ -50,7 +59,7 @@ header {
 
 
 main {
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 .titulo__principal {
     text-align: center;
@@ -70,7 +79,7 @@ main {
 }
 .grid__inicio {
     display: grid;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -165,10 +174,17 @@ row-gap: 10px;
 }
 .productos__info {
     color: rgb(255, 255, 255);
-    padding: 0 16px;
     background-color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 90%;
+}
+.productos__info-1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 120%;
 }
 .productos__precio {
     background-color: black;
@@ -177,6 +193,7 @@ row-gap: 10px;
 .precio {
     color: white;
     text-align: center;
+    font-size: 190%;
 }
 
 /* Main Articulos varios */
@@ -187,7 +204,7 @@ row-gap: 10px;
 }
 .articulos__lista {
     display: grid;
-    width: 100vw;
+    width: 98vw;
     height: auto;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -250,10 +267,15 @@ row-gap: 10px;
 }
 .productos__precio {
     color: rgb(255, 255, 255);
-    padding: 0 16px;
     background-color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     text-align: center;
+}
+
+.producto__precio-1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 170%;
 }
 .tarjetita {
     background-color: black;
@@ -261,7 +283,7 @@ row-gap: 10px;
     height: 100px;
     color: white;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 /* Main Peluqueria */
@@ -334,12 +356,26 @@ row-gap: 10px;
     transition: all 1s;
 }
 
+.carrouser-boton {
+    color: black;
+}
 
 .peluqueria__texto {
     font-family: 'Roboto', sans-serif;
     padding: 0 16px;
     background-color: black;
     color: white;
+}
+.img_banner {
+    width: 100%;
+    height: 270px;
+}
+.carrouser-altura {
+    height: 600px;
+}
+.corrouser-com {
+    width: 98vw;
+    height: 100%;
 }
 /* Main Contacto */
 
