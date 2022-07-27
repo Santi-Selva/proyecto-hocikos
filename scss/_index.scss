@@ -1,0 +1,44 @@
+/* Inicio */
+main {
+    margin-bottom: 0px;
+}
+.grid {
+    &__inicio {
+        display: grid;
+        width: 98vw;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:"grid-dos grid-dos grid-dos"
+                            "grid-cuatro grid-tres grid-cinco"
+                            "grid-uno grid-uno grid-uno";
+    background-image: url("../recursos/huellasperro.jpg");
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+    &-uno {
+        grid-area: grid-uno;
+        background-image: url(../recursos/bannerinicio.jpg);
+        @extend .backgraund_centrado;
+    }
+    &-dos {
+        grid-area: grid-dos;
+        background-image: url(../recursos/peluoferta.jpg);
+        @extend .backgraund_centrado;
+    }
+    &-tres {
+        grid-area: grid-tres;
+        background-image: url(../recursos/mediopelu.jpg);
+        @extend .backgraund_centrado;
+    }
+    &-cuatro {
+        grid-area: grid-cuatro;
+        background-image: url(../recursos/accesorios.jpg);
+        @extend .backgraund_centrado;
+    }
+    &-cinco {
+        grid-area: grid-cinco;
+        background-image: url(../recursos/maspublicidad.jpg);
+        @extend .backgraund_centrado;
+    }
+}

@@ -1,0 +1,27 @@
+/* HEADER */
+header {
+    background-color: rgb(0, 0, 0);
+}
+.header {
+    &-letras {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 120%;
+        padding: 20px;
+        &:hover {
+            transform: scale(1.35, 1.35);
+            transition: 1s;
+        }
+    }
+    &-letras-1 {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 170%;
+        &:hover {
+            transform: scale(1.35, 1.35);
+            transition: 1s;
+        }
+    }
+}
