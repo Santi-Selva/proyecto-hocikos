@@ -1,0 +1,266 @@
+/* Media Celulares */
+@media (min-width: 320px) and (max-width: 575px) {
+    /* Inicio */
+    .titulo__principal {
+        font-size: 40px;
+    }
+    .grid {
+        &__inicio {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"grid-dos"
+                                "grid-uno"
+                                "grid-tres"
+                                "grid-cuatro"
+                                "grid-cinco";
+        }
+        &-uno {
+            grid-area: grid-uno;
+            background-image: url(../recursos/bannerinicio.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-dos {
+            grid-area: grid-dos;
+            background-image: url(../recursos/peluoferta.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-tres {
+            grid-area: grid-tres;
+            background-image: url(../recursos/mediopelu.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-cuatro {
+            grid-area: grid-cuatro;
+            background-image: url(../recursos/accesorios.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-cinco {
+            grid-area: grid-cinco;
+            background-image: url(../recursos/maspublicidad.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    /* Alimentos */
+    .productos__lista {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"pedrigee"
+                            "dog-selection"
+                            "cat-chow"
+                            "eukanuba"
+                            "dog-chow"
+                            "whiskas";
+        column-gap: 10px;
+        row-gap: 10px;
+        background-image: url("../recursos/huellasperro.jpg");
+    }
+/* Articulos varios */
+.articulos {
+    &__lista {
+        display: grid;
+        width: 100vw;
+        height: auto;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(1fr, 10);
+        grid-template-areas:"publicidad"
+                            "maspubli"
+                            "producto-dos"
+                            "producto-cinco"
+                            "producto-ocho"
+                            "producto-cuatro"
+                            "producto-uno"
+                            "producto-siete"
+                            "producto-tres"
+                            "producto-seis";
+        row-gap: 10px;
+        background-image: url("../recursos/huellasperro.jpg");
+    }
+    &-publicidad {
+        grid-area: publicidad;
+        background-image: url("../recursos/juguetesyac.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: solid 2px rgb(0, 0, 0);
+        
+    }
+    &-maspubli {
+        grid-area: maspubli;
+        background-image: url(../recursos/maspubli.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: solid 2px rgb(0, 0, 0);
+        background-color: white;
+    }
+}
+/* Contactos */
+.contactos {
+    &-formulario {
+        border: solid;
+        color: rgba(8, 8, 8, 0.753);
+    }
+    &_datos-mapa {
+        width: 180px;
+        margin-left: auto;
+        padding-right: 10px;
+    }
+    &_redes-imagen {
+        width: 60px;
+        padding: 5px 16px;
+    }
+}
+    /* Footer */
+    .footer {
+        &_main {
+            display: block;
+        }
+        &__imagen {
+            width: 100%;
+            height: 150px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &__mapa {
+            width: 100%;
+            height: 150px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+
+/* Media Tablets */
+@media (min-width: 576px) and (max-width: 992px) {
+    /* Inicio */
+    .grid {
+        &__inicio {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
+            grid-template-areas:"grid-dos grid-dos"
+                                "grid-uno grid-uno"
+                                "grid-tres grid-cinco"
+                                "grid-tres grid-cuatro";
+        }
+        &-uno {
+            grid-area: grid-uno;
+            background-image: url(../recursos/bannerinicio.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-dos {
+            grid-area: grid-dos;
+            background-image: url(../recursos/peluoferta.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-tres {
+            grid-area: grid-tres;
+            background-image: url(../recursos/mediopelu.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-cuatro {
+            grid-area: grid-cuatro;
+            background-image: url(../recursos/accesorios.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-cinco {
+            grid-area: grid-cinco;
+            background-image: url(../recursos/maspublicidad.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+/* Alimentos */
+.productos__lista {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"pedrigee dog-selection"
+                        "cat-chow eukanuba"
+                        "dog-chow whiskas";
+    column-gap: 10px;
+    row-gap: 10px;
+    background-image: url("../recursos/huellasperro.jpg");
+}
+/* Articulos varios */
+.articulos {
+    &__lista {
+        display: grid;
+        width: 100vw;
+        height: auto;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:"publicidad maspubli"
+                            "producto-dos producto-cinco"
+                            "producto-ocho producto-cuatro"
+                            "producto-uno producto-siete"
+                            "producto-tres producto-seis";
+        column-gap: 20px;
+        row-gap: 10px;
+        background-image: url("../recursos/huellasperro.jpg");
+    }
+    &__imagen {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* Contacto */
+.contactos {
+    &-formulario {
+        border: solid;
+        color: rgba(8, 8, 8, 0.753);
+    }
+    &_redes-imagen {
+        width: 70px;
+        padding: 5px 16px;
+    }
+}
+/* Footer */
+.footer {
+    &__imagen {
+        width: 100%;
+        height: 400px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__mapa {
+        width: 100%;
+        height: 400px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &_main {
+        display: block;
+    }
+}
+
+}

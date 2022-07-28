@@ -131,37 +131,41 @@ main {
   column-gap: 30px;
   row-gap: 15px;
   background-image: url("../recursos/huellasperro.jpg"); }
-  .articulos__lista-publicidad {
-    grid-area: publicidad;
-    background-image: url("../recursos/juguetesyac.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 2px black; }
-  .articulos__lista-maspubli {
-    grid-area: maspubli;
-    background-image: url(../recursos/maspubli.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 2px black;
-    background-color: white; }
-  .articulos__lista-uno {
-    grid-area: producto-uno; }
-  .articulos__lista-dos {
-    grid-area: producto-dos; }
-  .articulos__lista-tres {
-    grid-area: producto-tres; }
-  .articulos__lista-cuatro {
-    grid-area: producto-cuatro; }
-  .articulos__lista-cinco {
-    grid-area: producto-cinco; }
-  .articulos__lista-seis {
-    grid-area: producto-seis; }
-  .articulos__lista-siete {
-    grid-area: producto-siete; }
-  .articulos__lista-ocho {
-    grid-area: producto-ocho; }
+
+.articulos-publicidad {
+  grid-area: publicidad;
+  background-image: url("../recursos/juguetesyac.jpg");
+  border: solid 2px black; }
+
+.articulos-maspubli {
+  grid-area: maspubli;
+  background-image: url(../recursos/maspubli.jpg);
+  border: solid 2px black;
+  background-color: white; }
+
+.articulos {
+  grid-area: producto-uno; }
+
+.articulos-dos {
+  grid-area: producto-dos; }
+
+.articulos-tres {
+  grid-area: producto-tres; }
+
+.articulos-cuatro {
+  grid-area: producto-cuatro; }
+
+.articulos-cinco {
+  grid-area: producto-cinco; }
+
+.articulos-seis {
+  grid-area: producto-seis; }
+
+.articulos-siete {
+  grid-area: producto-siete; }
+
+.articulos-ocho {
+  grid-area: producto-ocho; }
 
 .articulos__info {
   display: flex;
@@ -232,8 +236,35 @@ main {
     width: 100px;
     padding: 5px 16px; }
 
+/* Footer */
+footer {
+  background-image: url("../recursos/huellasperro.jpg"); }
+
+.footer__item a {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  font-size: 170%;
+  padding: 0 16px; }
+
+.footer_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.footer__imagen {
+  padding: 0 16px;
+  width: 650px;
+  height: 400px; }
+
+.footer__mapa {
+  padding: 0 16px;
+  width: 650px;
+  height: 400px; }
+
 /* Extend */
-.backgraund_centrado, .grid-uno, .grid-dos, .grid-tres, .grid-cuatro, .grid-cinco {
+.backgraund_centrado, .grid-uno, .grid-dos, .grid-tres, .grid-cuatro, .grid-cinco, .articulos-publicidad, .articulos-maspubli {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -260,54 +291,11 @@ main {
   background-color: black;
   color: white; }
 
-/* Footer */
-footer {
-  background-image: url("../recursos/huellasperro.jpg"); }
-
-.footer__item a {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  font-size: 170%;
-  padding: 0 16px; }
-
-.papa-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-.footer__imagen {
-  padding: 0 16px;
-  width: 650px;
-  height: 400px; }
-
-.footer__mapa {
-  padding: 0 16px;
-  width: 650px;
-  height: 400px; }
-
 /* Media Celulares */
 @media (min-width: 320px) and (max-width: 575px) {
-  /* Header */
-  .header__nav {
-    display: flex;
-    flex-direction: column; }
-  .header__logo {
-    display: inline;
-    width: 100px; }
-  .header__item {
-    display: flex;
-    flex-direction: column;
-    padding: 6px;
-    align-items: center; }
-  .header__item a {
-    color: #f8f6f6;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 110%;
-    padding: 0 16px; }
   /* Inicio */
+  .titulo__principal {
+    font-size: 40px; }
   .grid__inicio {
     display: grid;
     width: 100vw;
@@ -356,8 +344,6 @@ footer {
     column-gap: 10px;
     row-gap: 10px;
     background-image: url("../recursos/huellasperro.jpg"); }
-  .titulo__principal {
-    font-size: 40px; }
   /* Articulos varios */
   .articulos__lista {
     display: grid;
@@ -368,14 +354,14 @@ footer {
     grid-template-areas: "publicidad" "maspubli" "producto-dos" "producto-cinco" "producto-ocho" "producto-cuatro" "producto-uno" "producto-siete" "producto-tres" "producto-seis";
     row-gap: 10px;
     background-image: url("../recursos/huellasperro.jpg"); }
-  .publicidad {
+  .articulos-publicidad {
     grid-area: publicidad;
     background-image: url("../recursos/juguetesyac.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border: solid 2px black; }
-  .maspubli {
+  .articulos-maspubli {
     grid-area: maspubli;
     background-image: url(../recursos/maspubli.jpg);
     background-position: center;
@@ -383,29 +369,20 @@ footer {
     background-size: contain;
     border: solid 2px black;
     background-color: white; }
-  /* Peluqueria */
-  .peluqueria {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "uno1" "dos2" "tres3" "cuatro4"  "cinco5"  "seis6"  "siete7";
-    column-gap: 5px;
-    row-gap: 5px;
-    background-image: url("../recursos/huellasperro.jpg"); }
   /* Contactos */
-  .formulario {
+  .contactos-formulario {
     border: solid;
     color: rgba(8, 8, 8, 0.753); }
-  .formulario__mapa {
+  .contactos_datos-mapa {
     width: 180px;
     margin-left: auto;
     padding-right: 10px; }
-  .redes__imagen {
+  .contactos_redes-imagen {
     width: 60px;
     padding: 5px 16px; }
   /* Footer */
+  .footer_main {
+    display: block; }
   .footer__imagen {
     width: 100%;
     height: 150px;
@@ -415,25 +392,10 @@ footer {
     width: 100%;
     height: 150px;
     padding-left: 16px;
-    padding-right: 16px; }
-  .papa-footer {
-    display: block; } }
+    padding-right: 16px; } }
 
 /* Media Tablets */
 @media (min-width: 576px) and (max-width: 992px) {
-  /* Header */
-  .header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center; }
-  .header__logo {
-    display: inline;
-    width: 100px; }
-  .header__item {
-    display: inline;
-    padding: 0px;
-    align-items: center; }
   /* Inicio */
   .grid__inicio {
     display: grid;
@@ -484,9 +446,6 @@ footer {
     row-gap: 10px;
     background-image: url("../recursos/huellasperro.jpg"); }
   /* Articulos varios */
-  .articulos__imagen {
-    width: 200px;
-    height: 200px; }
   .articulos__lista {
     display: grid;
     width: 100vw;
@@ -497,22 +456,14 @@ footer {
     column-gap: 20px;
     row-gap: 10px;
     background-image: url("../recursos/huellasperro.jpg"); }
-  /* Peluqueria */
-  .peluqueria {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "uno1 uno1" "dos2 tres3" "cuatro4 cinco5"  "seis6 siete7";
-    column-gap: 5px;
-    row-gap: 5px;
-    background-image: url("../recursos/huellasperro.jpg"); }
+  .articulos__imagen {
+    width: 200px;
+    height: 200px; }
   /* Contacto */
-  .formulario {
+  .contactos-formulario {
     border: solid;
     color: rgba(8, 8, 8, 0.753); }
-  .redes__imagen {
+  .contactos_redes-imagen {
     width: 70px;
     padding: 5px 16px; }
   /* Footer */
@@ -526,5 +477,5 @@ footer {
     height: 400px;
     padding-left: 16px;
     padding-right: 16px; }
-  .papa-footer {
+  .footer_main {
     display: block; } }

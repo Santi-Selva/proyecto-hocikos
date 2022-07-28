@@ -17,48 +17,44 @@
         column-gap: 30px;
         row-gap: 15px;
         background-image: url("../recursos/huellasperro.jpg");
-        &-publicidad {
-            grid-area: publicidad;
-            background-image: url("../recursos/juguetesyac.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            border: solid 2px rgb(0, 0, 0);
-            
-        }
-        &-maspubli {
-            grid-area: maspubli;
-            background-image: url(../recursos/maspubli.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            border: solid 2px rgb(0, 0, 0);
-            background-color: white;
-        }
-        &-uno {
-            grid-area: producto-uno;
-        }
-        &-dos {
-            grid-area: producto-dos;
-        }
-        &-tres {
-            grid-area: producto-tres;
-        }
-        &-cuatro {
-            grid-area: producto-cuatro;
-        }
-        &-cinco {
-            grid-area: producto-cinco;
-        }
-        &-seis {
-            grid-area: producto-seis;
-        }
-        &-siete {
-            grid-area: producto-siete;
-        }
-        &-ocho {
-            grid-area: producto-ocho;
-        }
+    }
+    &-publicidad {
+        grid-area: publicidad;
+        background-image: url("../recursos/juguetesyac.jpg");
+        @extend .backgraund_centrado;
+        border: solid 2px rgb(0, 0, 0);
+        
+    }
+    &-maspubli {
+        grid-area: maspubli;
+        background-image: url(../recursos/maspubli.jpg);
+        @extend .backgraund_centrado;
+        border: solid 2px rgb(0, 0, 0);
+        background-color: white;
+    }
+    & {
+        grid-area: producto-uno;
+    }
+    &-dos {
+        grid-area: producto-dos;
+    }
+    &-tres {
+        grid-area: producto-tres;
+    }
+    &-cuatro {
+        grid-area: producto-cuatro;
+    }
+    &-cinco {
+        grid-area: producto-cinco;
+    }
+    &-seis {
+        grid-area: producto-seis;
+    }
+    &-siete {
+        grid-area: producto-siete;
+    }
+    &-ocho {
+        grid-area: producto-ocho;
     }
     
     &__info {

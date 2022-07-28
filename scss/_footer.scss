@@ -1,0 +1,30 @@
+/* Footer */
+footer {
+    background-image: url("../recursos/huellasperro.jpg");
+}
+.footer {
+    &__item a {
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        font-size: 170%; 
+        padding: 0 16px;
+    }
+    &_main {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    
+    }
+    &__imagen {
+        padding: 0 16px;
+        width: 650px;
+        height: 400px;
+    }
+    &__mapa {
+        padding: 0 16px;
+        width: 650px;
+        height: 400px;
+    }
+}
