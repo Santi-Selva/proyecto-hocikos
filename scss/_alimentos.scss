@@ -45,20 +45,20 @@
     }
     &__info {
         color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
+        background-color: $fondo-backgraund;
         font-family: 'Roboto', sans-serif;
         text-align: center;
         font-size: 90%;
     }
     &__info-1 {
         color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
+        background-color: $fondo-backgraund;
         font-family: 'Roboto', sans-serif;
         text-align: center;
         font-size: 120%;
     }
     &__precio-prin {
-        background-color: black;
+        background-color: $fondo-backgraund;
         width: 100%;
     }
     &_precio {

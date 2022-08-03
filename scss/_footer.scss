@@ -5,7 +5,7 @@ footer {
 .footer {
     &__item a {
         font-family: 'Roboto', sans-serif;
-        color: black;
+        background-color: $fondo-backgraund;
         text-decoration: none;
         background-color: white;
         font-size: 170%; 

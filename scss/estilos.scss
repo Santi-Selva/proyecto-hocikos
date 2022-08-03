@@ -1,3 +1,5 @@
+@import "operators";
+@import "variables";
 @import "header";
 @import "index";
 @import "alimentos";
@@ -5,9 +7,9 @@
 @import "peluqueria";
 @import "contactos";
 @import "footer";
-@import "operators";
 
-*   {
+
+*  {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -17,7 +19,7 @@
     text-align: center;
     font-family: 'Titan One', cursive;
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: $fondo-backgraund;
     font-size: 80px;
     padding: 0 16px;
     margin: 1px;
@@ -26,7 +28,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 140%;
     padding: 15px 16px;
-    background-color: black;
+    background-color: $fondo-backgraund;
     color: white;
 }
 @import "mediaqueries";
