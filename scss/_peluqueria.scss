@@ -11,6 +11,10 @@
         height: 270px;
     }
     &_carrouser-altura {
-        height: 600px;
+        height: 800px;
+    }
+    &__img {
+        object-fit: cover;
+        object-position: center;
     }
 }

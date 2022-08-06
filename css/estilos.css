@@ -212,7 +212,11 @@ main {
   height: 270px; }
 
 .peluqueria_carrouser-altura {
-  height: 600px; }
+  height: 800px; }
+
+.peluqueria__img {
+  object-fit: cover;
+  object-position: center; }
 
 /* Main Contacto */
 .contactos {
