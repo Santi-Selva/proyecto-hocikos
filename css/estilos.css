@@ -39,7 +39,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "grid-dos grid-dos grid-dos" "grid-cuatro grid-tres grid-cinco" "grid-uno grid-uno grid-uno";
-  background-image: url("../recursos/huellasperro.jpg");
+  background-image: url("../recursos/huellasperro.png");
   column-gap: 10px;
   row-gap: 10px; }
 
@@ -82,7 +82,7 @@ main {
   grid-template-areas: "pedrigee dog-selection dog-chow" "cat-chow eukanuba whiskas";
   column-gap: 30px;
   row-gap: 30px;
-  background-image: url("../recursos/huellasperro.jpg"); }
+  background-image: url("../recursos/huellasperro.png"); }
   .productos__lista_pedrigee {
     grid-area: pedrigee; }
   .productos__lista_dog-chow {
@@ -137,7 +137,7 @@ main {
   grid-template-areas: "publicidad producto-dos producto-cinco" "publicidad producto-ocho producto-cuatro" "maspubli producto-uno producto-siete" "maspubli producto-tres producto-seis";
   column-gap: 30px;
   row-gap: 15px;
-  background-image: url("../recursos/huellasperro.jpg"); }
+  background-image: url("../recursos/huellasperro.png"); }
 
 .articulos-publicidad {
   grid-area: publicidad;
@@ -249,7 +249,7 @@ main {
 
 /* Footer */
 footer {
-  background-image: url("../recursos/huellasperro.jpg"); }
+  background-image: url("../recursos/huellasperro.png"); }
 
 .footer__item a {
   font-family: 'Roboto', sans-serif;
