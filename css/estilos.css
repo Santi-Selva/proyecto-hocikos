@@ -237,7 +237,8 @@ main {
       margin-left: auto;
       padding-right: 10px; }
   .contactos_letras-bsp {
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    margin: 8px; }
   .contactos_boostrap {
     padding: 0 16px; }
   .contactos_redes-info {
@@ -249,7 +250,8 @@ main {
 
 /* Footer */
 footer {
-  background-image: url("../recursos/huellasperro.png"); }
+  background-image: url("../recursos/huellasperro.png");
+  padding-top: 10px; }
 
 .footer__item a {
   font-family: 'Roboto', sans-serif;
